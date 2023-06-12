@@ -3,8 +3,6 @@ $rezultat = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $decimalniBroj = $_POST['decimalni'];
-
-    // Pretvori decimalni broj u heksadekadski broj
     $heksadekadskiBroj = dechex($decimalniBroj);
 
     $rezultat = 'Pretvorba uspješno obavljena. Heksadekadski broj: ' . $heksadekadskiBroj;
